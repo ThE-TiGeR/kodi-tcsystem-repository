@@ -1,22 +1,40 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="repository.tcsystem"
-  version="2.0.1"
-  name="TCSystem KODI Repo"
-  provider-name="TCSystem(Thomas Goessler)">
+  id="pvr.tca1tv"
+  version="3.0.3"
+  name="TCA1TV"
+  provider-name="TCSystem (Thomas Goessler)">
 
-  <extension point="xbmc.addon.repository" name="TCSystem KODI Repo">
-	<info compressed="false">http://raw.github.com/ThE-TiGeR/kodi-tcsystem-repository/master/addons.xml</info>
-	<checksum>http://raw.github.com/ThE-TiGeR/kodi-tcsystem-repository/master/addons.xml.md5</checksum>
-	<datadir zip="true">http://raw.github.com/ThE-TiGeR/kodi-tcsystem-repository/master</datadir>
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="1.9.2"/>
+  </requires>
+
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="libTCA1TVKodiPlugin.so"
+    library_osx="TCA1TVKodiPlugin.pvr"
+    library_wingl="TCA1TVKodiPlugin.dll"
+    library_windx="TCA1TVKodiPlugin.dll"
+    library_android="libTCA1TVKodiPlugin.so">
+    <provides>video</provides>
   </extension>
 
+
   <extension point="xbmc.addon.metadata">
-	<summary>KODI Addons by Thomas Goessler</summary>
-	<description></description>
-	<disclaimer>KODI Addons provided by TCSystem(Thomas Goessler)</disclaimer>
-	<platform>all</platform>
+    <summary lang="en">TCA1TV Client</summary>
+    <description lang="en">TCA1TV Client for viewing A1-TV with KODI</description>
+    <disclaimer lang="en">TCA1TV (3.0.3) importer by TCSystem (Thomas Goessler)</disclaimer>
+    <language></language>
+    <license>
+      GNU LESSER GENERAL PUBLIC LICENSE
+      Version 2.1, February 1999
+    </license>
+    <platform>wingl windx android</platform>
+    <forum></forum>
+    <website>https://bitbucket.org/the____tiger/tca1tv</website>
+    <email>the____tiger@hotmail.com</email>
+    <source>https://bitbucket.org/the____tiger/tca1tv/src</source>
   </extension>
 
 </addon>
-
