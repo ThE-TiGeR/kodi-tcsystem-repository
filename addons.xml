@@ -2,7 +2,7 @@
 <addons>
 <addon
   id="pvr.tca1tv"
-  version="3.0.4"
+  version="3.1.0"
   name="TCA1TV"
   provider-name="TCSystem (Thomas Goessler)">
 
@@ -17,7 +17,7 @@
     library_osx="TCA1TVKodiPlugin.pvr"
     library_wingl="TCA1TVKodiPlugin.dll"
     library_windx="TCA1TVKodiPlugin.dll"
-    library_android="libTCA1TVKodiPlugin.so">
+    library_android="libTCA1TVKodiPlugin_arm-linux-androideabi-4.8.so">
     <provides>video</provides>
   </extension>
 
@@ -25,13 +25,13 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">TCA1TV Client</summary>
     <description lang="en">TCA1TV Client for viewing A1-TV with KODI</description>
-    <disclaimer lang="en">TCA1TV (3.0.4) importer by TCSystem (Thomas Goessler)</disclaimer>
+    <disclaimer lang="en">TCA1TV (3.1.0) importer by TCSystem (Thomas Goessler)</disclaimer>
     <language></language>
     <license>
       GNU LESSER GENERAL PUBLIC LICENSE
       Version 2.1, February 1999
     </license>
-    <platform>wingl windx android</platform>
+    <platform>wingl windx android linux</platform>
     <forum></forum>
     <website>https://bitbucket.org/the____tiger/tca1tv</website>
     <email>the____tiger@hotmail.com</email>
